@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+func main() {
+	exponencia(2)
+}
+
+func exponencia(numero int) {
+	if numero > 1000000000000000000 {
+		return
+	}
+	fmt.Println(numero)
+	exponencia(numero * 2)
+}
